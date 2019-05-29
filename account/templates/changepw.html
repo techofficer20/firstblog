@@ -1,0 +1,28 @@
+<html>
+{% extends 'base.html' %}
+{% block contents %}
+
+<body>
+    <div class="container">
+        {% if error %}
+        {{ error }}
+        <br />
+        <br />
+        {% endif %}
+        <h1>비밀번호 변경</h1>
+        <form>
+            기존 비밀번호
+            <br />
+            <input type = "password" name = "checkpassword" />
+            <br />
+            새로운 비밀번호
+            <br />
+            <input type = "password" name = "newpassword" />
+            <br />
+            <br />
+            <input class="btn btn-primary" type = "submit" value = "변경" />
+        </form>
+    {% endblock %}
+</body>
+
+</html>
